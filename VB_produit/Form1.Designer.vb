@@ -171,7 +171,7 @@ Partial Class Form1
         Me.Button3.BackColor = System.Drawing.Color.Fuchsia
         Me.Button3.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(574, 232)
+        Me.Button3.Location = New System.Drawing.Point(571, 232)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(112, 39)
         Me.Button3.TabIndex = 14
