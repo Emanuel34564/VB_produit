@@ -41,109 +41,121 @@ Partial Class Formulaire_de_creation
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(219, 177)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(215, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(362, 20)
         Me.DateTimePicker1.TabIndex = 19
         '
         'TxtPrix
         '
-        Me.TxtPrix.Location = New System.Drawing.Point(194, 135)
+        Me.TxtPrix.Location = New System.Drawing.Point(219, 135)
+        Me.TxtPrix.Multiline = True
         Me.TxtPrix.Name = "TxtPrix"
-        Me.TxtPrix.Size = New System.Drawing.Size(265, 20)
+        Me.TxtPrix.Size = New System.Drawing.Size(362, 30)
         Me.TxtPrix.TabIndex = 18
         '
         'TxtDesigniation
         '
-        Me.TxtDesigniation.Location = New System.Drawing.Point(194, 100)
+        Me.TxtDesigniation.Location = New System.Drawing.Point(219, 96)
+        Me.TxtDesigniation.Multiline = True
         Me.TxtDesigniation.Name = "TxtDesigniation"
-        Me.TxtDesigniation.Size = New System.Drawing.Size(265, 20)
+        Me.TxtDesigniation.Size = New System.Drawing.Size(362, 30)
         Me.TxtDesigniation.TabIndex = 17
         '
         'TxtCode
         '
-        Me.TxtCode.Location = New System.Drawing.Point(194, 59)
+        Me.TxtCode.Location = New System.Drawing.Point(219, 56)
+        Me.TxtCode.Multiline = True
         Me.TxtCode.Name = "TxtCode"
-        Me.TxtCode.Size = New System.Drawing.Size(265, 20)
+        Me.TxtCode.Size = New System.Drawing.Size(362, 30)
         Me.TxtCode.TabIndex = 16
         '
         'TxtId
         '
-        Me.TxtId.Location = New System.Drawing.Point(194, 27)
+        Me.TxtId.Location = New System.Drawing.Point(219, 20)
+        Me.TxtId.Multiline = True
         Me.TxtId.Name = "TxtId"
-        Me.TxtId.Size = New System.Drawing.Size(265, 20)
+        Me.TxtId.Size = New System.Drawing.Size(362, 30)
         Me.TxtId.TabIndex = 15
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(52, 181)
+        Me.Label5.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(46, 177)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(123, 17)
+        Me.Label5.Size = New System.Drawing.Size(157, 18)
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Date_de_Creation"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(52, 142)
+        Me.Label4.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Location = New System.Drawing.Point(46, 147)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(31, 17)
+        Me.Label4.Size = New System.Drawing.Size(41, 18)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Prix"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(52, 100)
+        Me.Label3.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(46, 108)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 17)
+        Me.Label3.Size = New System.Drawing.Size(110, 18)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Designation"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(52, 59)
+        Me.Label2.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(46, 68)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 17)
+        Me.Label2.Size = New System.Drawing.Size(51, 18)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Code"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(52, 27)
+        Me.Label1.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(46, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.Size = New System.Drawing.Size(27, 18)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "ID"
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(23, 227)
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 227)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(757, 211)
+        Me.DataGridView1.Size = New System.Drawing.Size(797, 221)
         Me.DataGridView1.TabIndex = 20
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(570, 162)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.Location = New System.Drawing.Point(613, 161)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 35)
+        Me.Button1.Size = New System.Drawing.Size(99, 47)
         Me.Button1.TabIndex = 21
         Me.Button1.Text = "Valider"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Formulaire_de_creation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Turquoise
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
