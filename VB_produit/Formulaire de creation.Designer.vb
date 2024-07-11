@@ -144,7 +144,7 @@ Partial Class Formulaire_de_creation
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(613, 161)
+        Me.Button1.Location = New System.Drawing.Point(628, 150)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(99, 47)
         Me.Button1.TabIndex = 21
