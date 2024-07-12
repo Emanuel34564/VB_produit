@@ -48,7 +48,7 @@ Partial Class Form1
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -89,7 +89,7 @@ Partial Class Form1
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button2.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(280, 414)
+        Me.Button2.Location = New System.Drawing.Point(245, 414)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(122, 39)
         Me.Button2.TabIndex = 26
@@ -101,7 +101,7 @@ Partial Class Form1
         Me.BtnSupprimezr.BackColor = System.Drawing.Color.Red
         Me.BtnSupprimezr.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSupprimezr.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnSupprimezr.Location = New System.Drawing.Point(465, 414)
+        Me.BtnSupprimezr.Location = New System.Drawing.Point(431, 414)
         Me.BtnSupprimezr.Name = "BtnSupprimezr"
         Me.BtnSupprimezr.Size = New System.Drawing.Size(130, 39)
         Me.BtnSupprimezr.TabIndex = 25
@@ -124,40 +124,45 @@ Partial Class Form1
         '
         'IDDataGridViewTextBoxColumn
         '
+        Me.IDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.IDDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
+        Me.IDDataGridViewTextBoxColumn.FillWeight = 87.44108!
         Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
         Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
         Me.IDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IDDataGridViewTextBoxColumn.Width = 43
         '
         'CodeDataGridViewTextBoxColumn
         '
+        Me.CodeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.CodeDataGridViewTextBoxColumn.DataPropertyName = "Code"
+        Me.CodeDataGridViewTextBoxColumn.FillWeight = 98.55368!
         Me.CodeDataGridViewTextBoxColumn.HeaderText = "Code"
         Me.CodeDataGridViewTextBoxColumn.Name = "CodeDataGridViewTextBoxColumn"
         Me.CodeDataGridViewTextBoxColumn.ReadOnly = True
-        Me.CodeDataGridViewTextBoxColumn.Width = 57
         '
         'DesignationDataGridViewTextBoxColumn
         '
+        Me.DesignationDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.DesignationDataGridViewTextBoxColumn.DataPropertyName = "Designation"
+        Me.DesignationDataGridViewTextBoxColumn.FillWeight = 101.4508!
         Me.DesignationDataGridViewTextBoxColumn.HeaderText = "Designation"
         Me.DesignationDataGridViewTextBoxColumn.Name = "DesignationDataGridViewTextBoxColumn"
         Me.DesignationDataGridViewTextBoxColumn.ReadOnly = True
-        Me.DesignationDataGridViewTextBoxColumn.Width = 88
         '
         'PrixDataGridViewTextBoxColumn
         '
+        Me.PrixDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.PrixDataGridViewTextBoxColumn.DataPropertyName = "Prix"
+        Me.PrixDataGridViewTextBoxColumn.FillWeight = 112.5544!
         Me.PrixDataGridViewTextBoxColumn.HeaderText = "Prix"
         Me.PrixDataGridViewTextBoxColumn.Name = "PrixDataGridViewTextBoxColumn"
         Me.PrixDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PrixDataGridViewTextBoxColumn.Width = 49
         '
         'DatedeCreationDataGridViewTextBoxColumn
         '
+        Me.DatedeCreationDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.DatedeCreationDataGridViewTextBoxColumn.DataPropertyName = "Date_de_Creation"
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         DataGridViewCellStyle2.Format = "N2"
@@ -166,7 +171,6 @@ Partial Class Form1
         Me.DatedeCreationDataGridViewTextBoxColumn.HeaderText = "Date_de_Creation"
         Me.DatedeCreationDataGridViewTextBoxColumn.Name = "DatedeCreationDataGridViewTextBoxColumn"
         Me.DatedeCreationDataGridViewTextBoxColumn.ReadOnly = True
-        Me.DatedeCreationDataGridViewTextBoxColumn.Width = 118
         '
         'Form1
         '
