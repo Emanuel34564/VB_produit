@@ -22,6 +22,7 @@ Partial Class Formulaire_de_creation
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.TxtPrix = New System.Windows.Forms.TextBox()
         Me.TxtDesigniation = New System.Windows.Forms.TextBox()
@@ -34,7 +35,17 @@ Partial Class Formulaire_de_creation
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Base_produitDataSet = New VB_produit.base_produitDataSet()
+        Me.ProduitBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProduitTableAdapter = New VB_produit.base_produitDataSetTableAdapters.produitTableAdapter()
+        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CodeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DesignationDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrixDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DatedeCreationDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Base_produitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProduitBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DateTimePicker1
@@ -133,10 +144,18 @@ Partial Class Formulaire_de_creation
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 227)
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.CodeDataGridViewTextBoxColumn, Me.DesignationDataGridViewTextBoxColumn, Me.PrixDataGridViewTextBoxColumn, Me.DatedeCreationDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.ProduitBindingSource
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 233)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(797, 221)
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(800, 217)
         Me.DataGridView1.TabIndex = 20
         '
         'Button1
@@ -150,6 +169,55 @@ Partial Class Formulaire_de_creation
         Me.Button1.TabIndex = 21
         Me.Button1.Text = "Valider"
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Base_produitDataSet
+        '
+        Me.Base_produitDataSet.DataSetName = "base_produitDataSet"
+        Me.Base_produitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProduitBindingSource
+        '
+        Me.ProduitBindingSource.DataMember = "produit"
+        Me.ProduitBindingSource.DataSource = Me.Base_produitDataSet
+        '
+        'ProduitTableAdapter
+        '
+        Me.ProduitTableAdapter.ClearBeforeFill = True
+        '
+        'IDDataGridViewTextBoxColumn
+        '
+        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
+        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
+        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
+        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'CodeDataGridViewTextBoxColumn
+        '
+        Me.CodeDataGridViewTextBoxColumn.DataPropertyName = "Code"
+        Me.CodeDataGridViewTextBoxColumn.HeaderText = "Code"
+        Me.CodeDataGridViewTextBoxColumn.Name = "CodeDataGridViewTextBoxColumn"
+        Me.CodeDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DesignationDataGridViewTextBoxColumn
+        '
+        Me.DesignationDataGridViewTextBoxColumn.DataPropertyName = "Designation"
+        Me.DesignationDataGridViewTextBoxColumn.HeaderText = "Designation"
+        Me.DesignationDataGridViewTextBoxColumn.Name = "DesignationDataGridViewTextBoxColumn"
+        Me.DesignationDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'PrixDataGridViewTextBoxColumn
+        '
+        Me.PrixDataGridViewTextBoxColumn.DataPropertyName = "Prix"
+        Me.PrixDataGridViewTextBoxColumn.HeaderText = "Prix"
+        Me.PrixDataGridViewTextBoxColumn.Name = "PrixDataGridViewTextBoxColumn"
+        Me.PrixDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DatedeCreationDataGridViewTextBoxColumn
+        '
+        Me.DatedeCreationDataGridViewTextBoxColumn.DataPropertyName = "Date_de_Creation"
+        Me.DatedeCreationDataGridViewTextBoxColumn.HeaderText = "Date_de_Creation"
+        Me.DatedeCreationDataGridViewTextBoxColumn.Name = "DatedeCreationDataGridViewTextBoxColumn"
+        Me.DatedeCreationDataGridViewTextBoxColumn.ReadOnly = True
         '
         'Formulaire_de_creation
         '
@@ -172,6 +240,8 @@ Partial Class Formulaire_de_creation
         Me.Name = "Formulaire_de_creation"
         Me.Text = "Formulaire_de_creation"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Base_produitDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProduitBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -189,4 +259,12 @@ Partial Class Formulaire_de_creation
     Friend WithEvents Label1 As Label
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button1 As Button
+    Friend WithEvents Base_produitDataSet As base_produitDataSet
+    Friend WithEvents ProduitBindingSource As BindingSource
+    Friend WithEvents ProduitTableAdapter As base_produitDataSetTableAdapters.produitTableAdapter
+    Friend WithEvents IDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CodeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DesignationDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents PrixDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DatedeCreationDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class
