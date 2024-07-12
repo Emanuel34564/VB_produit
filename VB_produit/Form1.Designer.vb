@@ -23,8 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -38,6 +38,7 @@ Partial Class Form1
         Me.DesignationDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PrixDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DatedeCreationDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Base_produitDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProduitBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,10 +55,10 @@ Partial Class Form1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.CodeDataGridViewTextBoxColumn, Me.DesignationDataGridViewTextBoxColumn, Me.PrixDataGridViewTextBoxColumn, Me.DatedeCreationDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.ProduitBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(-1, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(-1, 79)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(798, 372)
+        Me.DataGridView1.Size = New System.Drawing.Size(798, 305)
         Me.DataGridView1.TabIndex = 10
         '
         'Button3
@@ -126,8 +127,8 @@ Partial Class Form1
         '
         Me.IDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.IDDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.IDDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle13
         Me.IDDataGridViewTextBoxColumn.FillWeight = 87.44108!
         Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
         Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
@@ -164,13 +165,21 @@ Partial Class Form1
         '
         Me.DatedeCreationDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.DatedeCreationDataGridViewTextBoxColumn.DataPropertyName = "Date_de_Creation"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle2.Format = "N2"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.DatedeCreationDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle14.Format = "N2"
+        DataGridViewCellStyle14.NullValue = Nothing
+        Me.DatedeCreationDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle14
         Me.DatedeCreationDataGridViewTextBoxColumn.HeaderText = "Date_de_Creation"
         Me.DatedeCreationDataGridViewTextBoxColumn.Name = "DatedeCreationDataGridViewTextBoxColumn"
         Me.DatedeCreationDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(221, 26)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(340, 34)
+        Me.TextBox1.TabIndex = 29
         '
         'Form1
         '
@@ -178,6 +187,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 477)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button2)
@@ -189,6 +199,7 @@ Partial Class Form1
         CType(Me.Base_produitDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProduitBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents DataGridView1 As DataGridView
@@ -204,4 +215,5 @@ Partial Class Form1
     Friend WithEvents DesignationDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PrixDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents DatedeCreationDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TextBox1 As TextBox
 End Class

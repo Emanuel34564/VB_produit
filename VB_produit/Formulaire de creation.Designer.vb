@@ -33,17 +33,10 @@ Partial Class Formulaire_de_creation
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Base_produitDataSet = New VB_produit.base_produitDataSet()
         Me.ProduitBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProduitTableAdapter = New VB_produit.base_produitDataSetTableAdapters.produitTableAdapter()
-        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CodeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DesignationDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrixDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DatedeCreationDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Base_produitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProduitBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -92,7 +85,7 @@ Partial Class Formulaire_de_creation
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(46, 177)
+        Me.Label5.Location = New System.Drawing.Point(46, 179)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(157, 18)
         Me.Label5.TabIndex = 14
@@ -142,22 +135,6 @@ Partial Class Formulaire_de_creation
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "ID"
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.CodeDataGridViewTextBoxColumn, Me.DesignationDataGridViewTextBoxColumn, Me.PrixDataGridViewTextBoxColumn, Me.DatedeCreationDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.ProduitBindingSource
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 233)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(800, 217)
-        Me.DataGridView1.TabIndex = 20
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -184,49 +161,13 @@ Partial Class Formulaire_de_creation
         '
         Me.ProduitTableAdapter.ClearBeforeFill = True
         '
-        'IDDataGridViewTextBoxColumn
-        '
-        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
-        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
-        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
-        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'CodeDataGridViewTextBoxColumn
-        '
-        Me.CodeDataGridViewTextBoxColumn.DataPropertyName = "Code"
-        Me.CodeDataGridViewTextBoxColumn.HeaderText = "Code"
-        Me.CodeDataGridViewTextBoxColumn.Name = "CodeDataGridViewTextBoxColumn"
-        Me.CodeDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'DesignationDataGridViewTextBoxColumn
-        '
-        Me.DesignationDataGridViewTextBoxColumn.DataPropertyName = "Designation"
-        Me.DesignationDataGridViewTextBoxColumn.HeaderText = "Designation"
-        Me.DesignationDataGridViewTextBoxColumn.Name = "DesignationDataGridViewTextBoxColumn"
-        Me.DesignationDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'PrixDataGridViewTextBoxColumn
-        '
-        Me.PrixDataGridViewTextBoxColumn.DataPropertyName = "Prix"
-        Me.PrixDataGridViewTextBoxColumn.HeaderText = "Prix"
-        Me.PrixDataGridViewTextBoxColumn.Name = "PrixDataGridViewTextBoxColumn"
-        Me.PrixDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'DatedeCreationDataGridViewTextBoxColumn
-        '
-        Me.DatedeCreationDataGridViewTextBoxColumn.DataPropertyName = "Date_de_Creation"
-        Me.DatedeCreationDataGridViewTextBoxColumn.HeaderText = "Date_de_Creation"
-        Me.DatedeCreationDataGridViewTextBoxColumn.Name = "DatedeCreationDataGridViewTextBoxColumn"
-        Me.DatedeCreationDataGridViewTextBoxColumn.ReadOnly = True
-        '
         'Formulaire_de_creation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Turquoise
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 251)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.TxtPrix)
         Me.Controls.Add(Me.TxtDesigniation)
@@ -239,7 +180,6 @@ Partial Class Formulaire_de_creation
         Me.Controls.Add(Me.Label1)
         Me.Name = "Formulaire_de_creation"
         Me.Text = "Formulaire_de_creation"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Base_produitDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProduitBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -257,14 +197,8 @@ Partial Class Formulaire_de_creation
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button1 As Button
     Friend WithEvents Base_produitDataSet As base_produitDataSet
     Friend WithEvents ProduitBindingSource As BindingSource
     Friend WithEvents ProduitTableAdapter As base_produitDataSetTableAdapters.produitTableAdapter
-    Friend WithEvents IDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents CodeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DesignationDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PrixDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DatedeCreationDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class
